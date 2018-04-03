@@ -1,0 +1,3 @@
+#!/bin/bash
+source $(dirname $0)/commonEnv
+az account set --subscription $AZ_SUBSCRIPTION

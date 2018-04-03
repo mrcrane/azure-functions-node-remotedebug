@@ -1,0 +1,4 @@
+#!/bin/bash
+source $(dirname $0)/commonEnv
+# docker login --username <docker-id> 
+docker push $DOCKER_IMAGE_NAME

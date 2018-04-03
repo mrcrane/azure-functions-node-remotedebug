@@ -1,0 +1,3 @@
+#!/bin/bash
+source $(dirname $0)/commonEnv
+az group delete --name $AZ_RESOURCE_GROUP

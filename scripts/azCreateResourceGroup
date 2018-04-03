@@ -1,0 +1,3 @@
+#!/bin/bash
+source $(dirname $0)/commonEnv
+az group create --name $AZ_RESOURCE_GROUP --location $AZ_LOCATION

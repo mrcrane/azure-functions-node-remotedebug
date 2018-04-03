@@ -1,0 +1,15 @@
+#!/bin/bash
+source $(dirname $0)/commonEnv
+az functionapp create \
+    --name $AZ_FUNCTION_APP_NAME \
+    --storage-account $AZ_STORAGE_ACCOUNT \
+    --resource-group $AZ_RESOURCE_GROUP \
+    --plan $AZ_APP_SERVICE_PLAN \
+    --deployment-container-image-name $DOCKER_IMAGE_NAME
+
+storageConnectionString=$(az storage account show-connection-string --resource-group $AZ_RESOURCE_GROUP --name $AZ_STORAGE_ACCOUNT --query connectionString --output tsv)
+
+az functionapp config appsettings set \
+    --name $AZ_FUNCTION_APP_NAME \
+    --resource-group $AZ_RESOURCE_GROUP \
+    --settings AzureWebJobsDashboard=$storageConnectionString AzureWebJobsStorage=$storageConnectionString

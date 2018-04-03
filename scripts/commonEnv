@@ -1,0 +1,20 @@
+#!/bin/bash
+# Docker
+DOCKER_IMAGE_NAME=mrcrane/azure-functions-node-remotedebug:sample
+
+# Azure
+# AZ_SUBSCRIPTION=ce678eba-8ab3-4a0c-9610-97fee4ee6b34 # Ranjith Linux Test Sub
+# AZ_LOCATION=centraluseuap
+# AZ_RESOURCE_GROUP=micran-functions-remotedebug
+# AZ_STORAGE_ACCOUNT=micranfunctionsremote
+# AZ_APP_SERVICE_PLAN=micran-functions-remotedebug
+# AZ_FUNCTION_APP_NAME=micran-functions-remotedebug
+
+AZ_SUBSCRIPTION=49a56e80-d07f-408b-ac5e-361b1450b875 # F12 Development
+AZ_LOCATION=westus2
+AZ_RESOURCE_GROUP=micran-functions-docker
+AZ_STORAGE_ACCOUNT=micranfunctionsdocker
+AZ_APP_SERVICE_PLAN=micran-functions-docker
+AZ_FUNCTION_APP_NAME=micran-functions-docker
+
+set -x

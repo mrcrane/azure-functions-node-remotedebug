@@ -1,0 +1,3 @@
+#!/bin/bash
+source $(dirname $0)/commonEnv
+az appservice plan create --name $AZ_APP_SERVICE_PLAN --resource-group $AZ_RESOURCE_GROUP --sku S1 --is-linux
