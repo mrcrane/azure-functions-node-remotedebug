@@ -1,3 +1,4 @@
-FROM microsoft/azure-functions-runtime:v2.0.0-beta1
+FROM microsoft/azure-functions-node8:dev-jessie
+
 ENV AzureWebJobsScriptRoot=/home/site/wwwroot
 COPY . /home/site/wwwroot

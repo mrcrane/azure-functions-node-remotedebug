@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOCKER_IMAGE_NAME=mrcrane/azure-functions-node-remotedebug:sample
+DOCKER_IMAGE_NAME=mrcrane/azure-functions-node-remotedebug:dev-jessie
 
 AZ_SUBSCRIPTION=ce678eba-8ab3-4a0c-9610-97fee4ee6b34 # Ranjith Linux Test Sub
 AZ_LOCATION=centraluseuap
