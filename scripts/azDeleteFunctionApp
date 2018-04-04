@@ -1,3 +1,4 @@
 #!/bin/bash
 source $(dirname $0)/commonEnv
-az functionapp delete --resource-group $AZ_RESOURCE_GROUP --name $AZ_FUNCTION_APP_NAME
+az functionapp delete --name $AZ_FUNCTION_APP_NAME --resource-group $AZ_RESOURCE_GROUP
+az appservice plan delete --name $AZ_APP_SERVICE_PLAN --resource-group $AZ_RESOURCE_GROUP
